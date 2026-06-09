@@ -27,7 +27,6 @@ from src.loaders import iter_pairs
 from src.metrics import exact_match, field_accuracy, macro_f1
 from src.runners import ClaudeRunner, GeminiRunner, OpenAIRunner
 from src.runners.base import BaseRunner, RunResult
-from src.schemas import DocumentType
 
 load_dotenv()
 
