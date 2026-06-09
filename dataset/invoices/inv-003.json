@@ -1,0 +1,17 @@
+{
+  "document_number": "FR/2026/3091",
+  "document_date": "2026-06-12",
+  "supplier_name": "Sigma Materiais de Construção",
+  "supplier_vat": "511223344",
+  "customer_name": "Consumidor final",
+  "currency": "EUR",
+  "subtotal": "223.98",
+  "vat_total": "51.52",
+  "total": "275.50",
+  "line_items": [
+    {"description": "Cimento 25kg", "quantity": "8", "total": "38.00"},
+    {"description": "Areia (saco 25l)", "quantity": "12", "total": "30.00"},
+    {"description": "Vigas pré-fabricadas (un.)", "quantity": "2", "total": "180.00"},
+    {"description": "Brita 0/15 (saco 25l)", "quantity": "6", "total": "22.50"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "document_number": "INV-2026-0847",
+  "document_date": "2026-05-21",
+  "due_date": "2026-06-20",
+  "supplier_name": "Northbridge Software Ltd",
+  "supplier_vat": "123456789",
+  "customer_name": "Gamma Tech, S.A.",
+  "customer_vat": "508765432",
+  "currency": "GBP",
+  "subtotal": "5720.00",
+  "vat_total": "0.00",
+  "total": "5720.00",
+  "line_items": [
+    {"description": "Software licence — Annual", "quantity": "1", "unit_price": "2400.00", "total": "2400.00"},
+    {"description": "Implementation consulting (hours)", "quantity": "32", "unit_price": "85.00", "total": "2720.00"},
+    {"description": "Premium support — Quarterly", "quantity": "1", "unit_price": "600.00", "total": "600.00"}
+  ]
+}

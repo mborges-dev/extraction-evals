@@ -1,0 +1,29 @@
+Marta Lopes-Reis
+Product Designer · Lisbon → open to relocate
+marta.lr@example.com · linkedin.com/in/martalopesreis-example
+
+About me
+I design and ship interfaces for B2B SaaS — currently focused on
+operations tooling for fleet managers and logistics dispatchers.
+
+Selected work
+• Routely  (Apr 2024 – present) — Lead Designer
+   Owned the rebuild of the dispatcher screen used by 4,000+ daily
+   active operators. Cut average dispatch time from 47s to 18s.
+
+• Operari  (Jun 2021 – Mar 2024) — Senior Product Designer
+   Designed the entire customer-facing portal from scratch. Shipped
+   v1 in 11 weeks. Established the design system that survives today.
+
+• Bytewise Studio  (Sep 2018 – May 2021) — Designer (freelance, then employee)
+   Client work for early-stage startups across PT/UK/DE.
+
+Education
+• Faculdade de Belas-Artes, Universidade do Porto (FBAUP)
+   Licenciatura em Design de Comunicação · 2014 – 2017
+
+Tools
+Figma · FigJam · Framer · Notion · Linear · Principle · Webflow
+
+Languages
+PT (native) · EN (fluent) · DE (intermediate)

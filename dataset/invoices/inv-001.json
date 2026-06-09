@@ -1,0 +1,19 @@
+{
+  "document_number": "2026/A/00142",
+  "document_date": "2026-04-05",
+  "due_date": "2026-05-04",
+  "supplier_name": "Acme Distribuição, Lda.",
+  "supplier_vat": "509876543",
+  "customer_name": "Beta Restauração, Unipessoal Lda.",
+  "customer_vat": "510234567",
+  "currency": "EUR",
+  "subtotal": "1027.20",
+  "vat_total": "148.82",
+  "total": "1176.02",
+  "line_items": [
+    {"description": "Vinho Tinto Reserva 2020", "quantity": "24", "unit_price": "12.50", "total": "300.00", "vat_rate": "0.23"},
+    {"description": "Azeite Virgem Extra 750ml", "quantity": "48", "unit_price": "6.90", "total": "331.20", "vat_rate": "0.13"},
+    {"description": "Bacalhau Salgado kg", "quantity": "18", "unit_price": "18.00", "total": "324.00", "vat_rate": "0.13"},
+    {"description": "Sal Marinho 1kg", "quantity": "60", "unit_price": "1.20", "total": "72.00", "vat_rate": "0.06"}
+  ]
+}

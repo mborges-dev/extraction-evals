@@ -1,0 +1,31 @@
+INVOICE
+========
+
+Number: INV-2026-0847
+Issue date: 2026-05-21
+Due date: 2026-06-20
+
+From:
+Northbridge Software Ltd
+Unit 12, Riverside Park
+Reading RG1 8PR, United Kingdom
+VAT: GB123456789
+
+Bill to:
+Gamma Tech, S.A.
+Rua do Ouro, 200
+4000-300 Porto, Portugal
+VAT: PT508765432
+
+Description                              Qty   Rate(GBP)   Amount(GBP)
+─────────────────────────────────────────────────────────────────────
+Software licence — Annual                  1     2,400.00      2,400.00
+Implementation consulting (hours)         32        85.00      2,720.00
+Premium support — Quarterly                1       600.00        600.00
+─────────────────────────────────────────────────────────────────────
+                                         Subtotal:            5,720.00
+                                         VAT (0% reverse-charge):  0.00
+                                         ──────────────────
+                                         Total:               5,720.00
+
+Payment by bank transfer within 30 days. Reference: INV-2026-0847.

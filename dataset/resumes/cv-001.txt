@@ -1,0 +1,50 @@
+RUI MARQUES
+Senior Backend Engineer
+Lisbon, Portugal · rui.marques@example.com · +351 912 000 111
+linkedin.com/in/ruimarques-example · github.com/ruimarques-example
+
+────────────────────────────────────────────────────────────────────
+SUMMARY
+────────────────────────────────────────────────────────────────────
+8 years building distributed systems for fintech and logistics.
+Comfortable from Go services down to Postgres tuning and up to
+infrastructure-as-code. Lead small teams, write clear specs.
+
+────────────────────────────────────────────────────────────────────
+EXPERIENCE
+────────────────────────────────────────────────────────────────────
+
+PAYPATH (2023 — present)
+Lead Backend Engineer · Remote (Lisbon-based)
+  · Designed payment-reconciliation pipeline handling 2M tx/day
+  · Reduced p95 latency from 850ms to 110ms
+  · Mentored 4 engineers, led hiring for backend team
+
+FLEETBOX (2020 — 2023)
+Senior Backend Engineer · Porto
+  · Built logistics-tracking API consumed by 200+ fleet managers
+  · Migrated monolith to event-driven microservices over 18 months
+  · On-call rotation owner; established incident review process
+
+NORTHRUN (2017 — 2020)
+Software Engineer · Lisbon
+  · Joined as employee #6, scaled to 40-person team
+  · Built core booking API, billing engine, and admin dashboard
+
+────────────────────────────────────────────────────────────────────
+EDUCATION
+────────────────────────────────────────────────────────────────────
+Instituto Superior Técnico (IST), Lisbon
+  MSc Computer Science, 2017
+  BSc Computer Science, 2015
+
+────────────────────────────────────────────────────────────────────
+SKILLS
+────────────────────────────────────────────────────────────────────
+Go · Python · TypeScript · PostgreSQL · Redis · Kafka · Kubernetes ·
+Terraform · AWS · gRPC · OpenTelemetry · pytest · Linux
+
+────────────────────────────────────────────────────────────────────
+LANGUAGES
+────────────────────────────────────────────────────────────────────
+Portuguese (native) · English (C2) · Spanish (B1)

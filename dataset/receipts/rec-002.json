@@ -1,0 +1,14 @@
+{
+  "merchant_name": "CAFÉ NICOLA",
+  "merchant_vat": "500987654",
+  "receipt_date": "2026-06-03",
+  "currency": "EUR",
+  "total": "7.80",
+  "payment_method": "cash",
+  "line_items": [
+    {"description": "Espresso", "quantity": "1", "total": "1.20"},
+    {"description": "Croissant", "quantity": "1", "total": "1.80"},
+    {"description": "Galão", "quantity": "1", "total": "2.40"},
+    {"description": "Pastel de nata", "quantity": "2", "total": "2.40"}
+  ]
+}

@@ -1,0 +1,28 @@
+                            FATURA
+
+Acme Distribuição, Lda.                          Nº: 2026/A/00142
+Rua das Camélias, 12                              Data: 05/04/2026
+2745-123 Queluz                                   Vencimento: 04/05/2026
+NIF: 509876543
+
+Cliente:
+Beta Restauração, Unipessoal Lda.
+Av. da República, 88
+1050-191 Lisboa
+NIF: 510234567
+
+────────────────────────────────────────────────────────────────────
+Descrição                       Qtd.   P. Unit.    Total     IVA
+────────────────────────────────────────────────────────────────────
+Vinho Tinto Reserva 2020         24   12,50€    300,00€    23%
+Azeite Virgem Extra 750ml        48    6,90€    331,20€    13%
+Bacalhau Salgado kg              18   18,00€    324,00€    13%
+Sal Marinho 1kg                  60    1,20€     72,00€     6%
+────────────────────────────────────────────────────────────────────
+                                          Subtotal:  1.027,20€
+                                          IVA:         148,82€
+                                          ─────────────────────
+                                          TOTAL:    1.176,02€
+
+Forma de pagamento: Transferência bancária (30 dias)
+IBAN: PT50 0035 0001 1234 5678 90123

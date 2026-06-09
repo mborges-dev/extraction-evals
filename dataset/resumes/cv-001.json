@@ -1,0 +1,51 @@
+{
+  "candidate_name": "RUI MARQUES",
+  "headline": "Senior Backend Engineer",
+  "location": "Lisbon, Portugal",
+  "email": "rui.marques@example.com",
+  "phone": "+351 912 000 111",
+  "experience": [
+    {
+      "company": "PAYPATH",
+      "title": "Lead Backend Engineer",
+      "start_date": "2023-01-01",
+      "location": "Remote (Lisbon-based)",
+      "description": "Designed payment-reconciliation pipeline handling 2M tx/day. Reduced p95 latency from 850ms to 110ms. Mentored 4 engineers, led hiring for backend team."
+    },
+    {
+      "company": "FLEETBOX",
+      "title": "Senior Backend Engineer",
+      "start_date": "2020-01-01",
+      "end_date": "2023-01-01",
+      "location": "Porto",
+      "description": "Built logistics-tracking API consumed by 200+ fleet managers. Migrated monolith to event-driven microservices over 18 months. On-call rotation owner; established incident review process."
+    },
+    {
+      "company": "NORTHRUN",
+      "title": "Software Engineer",
+      "start_date": "2017-01-01",
+      "end_date": "2020-01-01",
+      "location": "Lisbon",
+      "description": "Joined as employee #6, scaled to 40-person team. Built core booking API, billing engine, and admin dashboard."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Superior Técnico (IST)",
+      "degree": "MSc",
+      "field_of_study": "Computer Science",
+      "end_date": "2017-01-01"
+    },
+    {
+      "institution": "Instituto Superior Técnico (IST)",
+      "degree": "BSc",
+      "field_of_study": "Computer Science",
+      "end_date": "2015-01-01"
+    }
+  ],
+  "skills": [
+    "Go", "Python", "TypeScript", "PostgreSQL", "Redis", "Kafka",
+    "Kubernetes", "Terraform", "AWS", "gRPC", "OpenTelemetry", "pytest", "Linux"
+  ],
+  "languages": ["Portuguese", "English", "Spanish"]
+}

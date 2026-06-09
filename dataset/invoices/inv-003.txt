@@ -1,0 +1,23 @@
+Fatura-Recibo Simplificada
+
+Sigma Materiais de Construção
+Estrada Nacional 117, km 4.2
+2735-211 Cacém                                Nº: FR/2026/3091
+NIPC: 511223344                                Data: 12/06/2026
+
+Cliente: Consumidor final
+                                              Linha   Descrição                    Qtd    Valor
+                                              ─────   ─────────────────────────────  ────  ────────
+                                              1       Cimento 25kg                   8     38,00€
+                                              2       Areia (saco 25l)              12     30,00€
+                                              3       Vigas pré-fabricadas (un.)     2    180,00€
+                                              4       Brita 0/15 (saco 25l)          6     22,50€
+
+                                              ─────────────────────────────────────────────────
+                                              Subtotal (s/ IVA):                   223,98€
+                                              IVA (23%):                            51,52€
+                                              ─────────────────────────────────────────────────
+                                              TOTAL A PAGAR:                       275,50€
+
+Pago via MB WAY · 12/06/2026 14:32
+Obrigado pela sua compra.

@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Marta Lopes-Reis",
+  "headline": "Product Designer",
+  "location": "Lisbon",
+  "email": "marta.lr@example.com",
+  "experience": [
+    {
+      "company": "Routely",
+      "title": "Lead Designer",
+      "start_date": "2024-04-01",
+      "description": "Owned the rebuild of the dispatcher screen used by 4,000+ daily active operators. Cut average dispatch time from 47s to 18s."
+    },
+    {
+      "company": "Operari",
+      "title": "Senior Product Designer",
+      "start_date": "2021-06-01",
+      "end_date": "2024-03-01",
+      "description": "Designed the entire customer-facing portal from scratch. Shipped v1 in 11 weeks. Established the design system that survives today."
+    },
+    {
+      "company": "Bytewise Studio",
+      "title": "Designer (freelance, then employee)",
+      "start_date": "2018-09-01",
+      "end_date": "2021-05-01",
+      "description": "Client work for early-stage startups across PT/UK/DE."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Faculdade de Belas-Artes, Universidade do Porto (FBAUP)",
+      "degree": "Licenciatura",
+      "field_of_study": "Design de Comunicação",
+      "start_date": "2014-01-01",
+      "end_date": "2017-01-01"
+    }
+  ],
+  "skills": ["Figma", "FigJam", "Framer", "Notion", "Linear", "Principle", "Webflow"],
+  "languages": ["Portuguese", "English", "German"]
+}
