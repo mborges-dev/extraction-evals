@@ -35,9 +35,7 @@ class LineItem(BaseModel):
 class InvoiceExtraction(BaseModel):
     """Structured extraction from an invoice or fatura."""
 
-    document_number: str | None = Field(
-        default=None, description="Invoice number as printed"
-    )
+    document_number: str | None = Field(default=None, description="Invoice number as printed")
     document_date: date | None = None
     due_date: date | None = None
     supplier_name: str
@@ -74,9 +72,7 @@ class Experience(BaseModel):
     company: str
     title: str
     start_date: date | None = None
-    end_date: date | None = Field(
-        default=None, description="None if still current"
-    )
+    end_date: date | None = Field(default=None, description="None if still current")
     location: str | None = None
     description: str | None = None
 

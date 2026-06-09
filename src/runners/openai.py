@@ -38,9 +38,7 @@ class OpenAIRunner(BaseRunner):
         super().__init__(model=model)
         api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise RuntimeError(
-                "OPENAI_API_KEY missing — copy .env.example to .env and fill it in."
-            )
+            raise RuntimeError("OPENAI_API_KEY missing — copy .env.example to .env and fill it in.")
         self.client = OpenAI(api_key=api_key)
 
     def _call_model(self, prompt: str, document_text: str) -> tuple[str, dict]:
@@ -61,8 +59,8 @@ class OpenAIRunner(BaseRunner):
             usage = {"input_tokens": 0, "output_tokens": 0, "latency_ms": latency_ms}
         else:
             cached = (
-                getattr(u, "prompt_tokens_details", None) and
-                getattr(u.prompt_tokens_details, "cached_tokens", 0)
+                getattr(u, "prompt_tokens_details", None)
+                and getattr(u.prompt_tokens_details, "cached_tokens", 0)
             ) or 0
             usage = {
                 "input_tokens": u.prompt_tokens - cached,

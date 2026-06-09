@@ -67,12 +67,8 @@ class ClaudeRunner(BaseRunner):
         usage = {
             "input_tokens": msg.usage.input_tokens,
             "output_tokens": msg.usage.output_tokens,
-            "cache_read_tokens": getattr(
-                msg.usage, "cache_read_input_tokens", 0
-            ) or 0,
-            "cache_write_tokens": getattr(
-                msg.usage, "cache_creation_input_tokens", 0
-            ) or 0,
+            "cache_read_tokens": getattr(msg.usage, "cache_read_input_tokens", 0) or 0,
+            "cache_write_tokens": getattr(msg.usage, "cache_creation_input_tokens", 0) or 0,
             "latency_ms": latency_ms,
         }
         return text, usage

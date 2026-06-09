@@ -25,13 +25,17 @@ def main(csv_path: str) -> None:
     out_stem = Path(csv_path).stem
 
     # Aggregate per (model, prompt_version)
-    agg = df.groupby(["model", "prompt_version"]).agg(
-        macro_f1=("macro_f1", "mean"),
-        field_accuracy=("field_accuracy", "mean"),
-        exact_match=("exact_match", "mean"),
-        cost_usd=("cost_usd", "sum"),
-        latency_ms=("latency_ms", "mean"),
-    ).reset_index()
+    agg = (
+        df.groupby(["model", "prompt_version"])
+        .agg(
+            macro_f1=("macro_f1", "mean"),
+            field_accuracy=("field_accuracy", "mean"),
+            exact_match=("exact_match", "mean"),
+            cost_usd=("cost_usd", "sum"),
+            latency_ms=("latency_ms", "mean"),
+        )
+        .reset_index()
+    )
 
     # Chart 1: macro F1 by model × prompt
     fig, ax = plt.subplots(figsize=(10, 5))

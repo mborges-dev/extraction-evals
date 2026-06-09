@@ -48,9 +48,7 @@ def field_accuracy(extracted: dict, ground_truth: dict) -> float:
     total = len(gt_n)
     if total == 0:
         return 1.0
-    matched = sum(
-        1 for k, v in gt_n.items() if isinstance(ex_n, dict) and ex_n.get(k) == v
-    )
+    matched = sum(1 for k, v in gt_n.items() if isinstance(ex_n, dict) and ex_n.get(k) == v)
     return matched / total
 
 
