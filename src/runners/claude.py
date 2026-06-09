@@ -6,6 +6,7 @@ import os
 import time
 
 from anthropic import Anthropic
+from anthropic.types import TextBlock
 
 from src.runners.base import BaseRunner
 
@@ -57,10 +58,10 @@ class ClaudeRunner(BaseRunner):
         )
         latency_ms = int((time.perf_counter() - start) * 1000)
 
-        # Extract text — first content block of type "text"
+        # Extract text — first TextBlock in the response
         text = ""
         for block in msg.content:
-            if hasattr(block, "text"):
+            if isinstance(block, TextBlock):
                 text = block.text
                 break
 
