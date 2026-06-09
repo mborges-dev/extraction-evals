@@ -16,7 +16,7 @@ import sys
 from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, cast
 
 import typer
 from dotenv import load_dotenv
@@ -27,6 +27,9 @@ from src.loaders import iter_pairs
 from src.metrics import exact_match, field_accuracy, macro_f1
 from src.runners import ClaudeRunner, GeminiRunner, OpenAIRunner
 from src.runners.base import BaseRunner, RunResult
+from src.schemas import DocumentType
+
+VALID_DOC_TYPES: set[str] = {"invoice", "receipt", "resume"}
 
 load_dotenv()
 
@@ -118,7 +121,10 @@ def run(
     if doc_types:
         pairs = []
         for t in doc_types:
-            pairs.extend(iter_pairs(t))
+            if t not in VALID_DOC_TYPES:
+                console.print(f"[red]Unknown doc type: {t}[/red]")
+                sys.exit(1)
+            pairs.extend(iter_pairs(cast(DocumentType, t)))
     else:
         pairs = list(iter_pairs())
 
