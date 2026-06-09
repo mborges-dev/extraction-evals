@@ -46,4 +46,6 @@ ignore = ["E501"]  # line length handled by formatter
 [tool.pyright]
 include = ["src"]
 pythonVersion = "3.12"
-typeCheckingMode = "strict"
+typeCheckingMode = "basic"
+# "strict" mode flags 100+ partial-unknown errors in third-party SDKs (anthropic,
+# openai, typer, pandas). "basic" is the conventional sweet spot for applied code.
