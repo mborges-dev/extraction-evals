@@ -16,10 +16,8 @@ dist/
 # uv
 uv.lock
 
-# Results (only schemas tracked; per-day CSVs are gitignored to keep repo small —
-# users publish their own results.csv as part of their blog post)
-results/*.csv
-results/charts/
+# Results — track every benchmark run so others can reproduce + audit.
+# (If your runs balloon, switch to LFS or move historical results elsewhere.)
 
 # Editor / OS
 .DS_Store
