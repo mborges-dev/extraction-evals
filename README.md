@@ -1,6 +1,5 @@
 # Extraction Evals
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12-3776AB.svg)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/managed%20by-uv-blueviolet.svg)](https://github.com/astral-sh/uv)
 
@@ -108,6 +107,12 @@ PRs welcome, especially:
 - **Better metrics** — current set is intentionally minimal.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution flow.
+
+---
+
+## Notice
+
+This repository is published as a **portfolio showcase** of my work. The code is **not licensed for reuse, redistribution, or modification.** You're welcome to read it, but it is not open source. If you'd like to discuss similar work, [get in touch](mailto:hello@miguelborges.dev).
 
 ---
 
