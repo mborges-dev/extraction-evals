@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.python-version-local
+.venv/
+venv/
+build/
+dist/
+
+# Env / secrets
+.env
+.env.local
+
+# uv
+uv.lock
+
+# Results (only schemas tracked; per-day CSVs are gitignored to keep repo small —
+# users publish their own results.csv as part of their blog post)
+results/*.csv
+results/charts/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Claude / AI tooling
+.claude/
+.agents/
+skills-lock.json
