@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-validate:
+    name: lint + dataset validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install project + dev deps
+        run: uv sync --extra dev
+
+      - name: Ruff (lint)
+        run: uv run ruff check src scripts
+
+      - name: Ruff (format check)
+        run: uv run ruff format --check src scripts
+
+      - name: Pyright (type check)
+        run: uv run pyright src
+
+      - name: Validate dataset (load every pair against schemas)
+        run: uv run python -c "from src.loaders import iter_pairs; pairs = list(iter_pairs()); print(f'✓ {len(pairs)} document pairs validated against schemas'); assert len(pairs) >= 7"
