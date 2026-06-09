@@ -90,25 +90,25 @@ def _try_parse_json(raw: str) -> dict | None:
 @app.command()
 def run(
     models: Annotated[
-        list[str],
-        typer.Option(
-            "--models", "-m", help="Models to evaluate. Repeatable."
-        ),
-    ] = ["claude-sonnet-4-5"],
+        list[str] | None,
+        typer.Option("--models", "-m", help="Models to evaluate. Repeatable."),
+    ] = None,
     prompts: Annotated[
-        list[str],
-        typer.Option(
-            "--prompts", "-p", help="Prompt versions to use. Repeatable."
-        ),
-    ] = ["v1_baseline"],
+        list[str] | None,
+        typer.Option("--prompts", "-p", help="Prompt versions to use. Repeatable."),
+    ] = None,
     doc_types: Annotated[
         list[DocumentType] | None,
-        typer.Option(
-            "--doc-types", "-t", help="Restrict to one or more doc types."
-        ),
+        typer.Option("--doc-types", "-t", help="Restrict to one or more doc types."),
     ] = None,
 ) -> None:
     """Run the eval matrix and write results to results/<date>.csv."""
+    # Mutable defaults are forbidden by lint (B006), so initialize inside.
+    if not models:
+        models = ["claude-sonnet-4-5"]
+    if not prompts:
+        prompts = ["v1_baseline"]
+
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     # Resolve pairs (cartesian product over doc types if not given)
@@ -145,9 +145,7 @@ def run(
                 continue
 
             for pair in pairs:
-                console.print(
-                    f"  → {model} × {prompt_version} × {pair.doc_type}/{pair.doc_id}"
-                )
+                console.print(f"  → {model} × {prompt_version} × {pair.doc_type}/{pair.doc_id}")
                 try:
                     raw, usage = runner._call_model(prompt, pair.text)
                     parsed = _try_parse_json(raw)

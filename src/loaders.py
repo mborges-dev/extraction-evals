@@ -8,9 +8,9 @@ Each document lives as a pair under `dataset/<type>/`:
 from __future__ import annotations
 
 import json
+from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterator
 
 from pydantic import BaseModel
 
@@ -64,9 +64,7 @@ def iter_pairs(doc_type: DocumentType | None = None) -> Iterator[DocumentPair]:
 
     Yields pairs in deterministic alphabetical order so eval runs are reproducible.
     """
-    types: list[DocumentType] = (
-        [doc_type] if doc_type else ["invoice", "receipt", "resume"]
-    )
+    types: list[DocumentType] = [doc_type] if doc_type else ["invoice", "receipt", "resume"]
     for t in types:
         type_dir = DATASET_ROOT / FOLDER_BY_TYPE[t]
         if not type_dir.exists():
