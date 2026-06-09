@@ -25,7 +25,7 @@ from rich.table import Table
 
 from src.loaders import iter_pairs
 from src.metrics import exact_match, field_accuracy, macro_f1
-from src.runners import ClaudeRunner, OpenAIRunner
+from src.runners import ClaudeRunner, GeminiRunner, OpenAIRunner
 from src.runners.base import BaseRunner, RunResult
 from src.schemas import DocumentType
 
@@ -44,6 +44,8 @@ def _runner_for(model: str) -> BaseRunner:
         return ClaudeRunner(model=model)
     if model.startswith("gpt") or model.startswith("o1"):
         return OpenAIRunner(model=model)
+    if model.startswith("gemini"):
+        return GeminiRunner(model=model)
     raise ValueError(f"No runner mapped for model: {model}")
 
 
@@ -98,8 +100,10 @@ def run(
         typer.Option("--prompts", "-p", help="Prompt versions to use. Repeatable."),
     ] = None,
     doc_types: Annotated[
-        list[DocumentType] | None,
-        typer.Option("--doc-types", "-t", help="Restrict to one or more doc types."),
+        list[str] | None,
+        typer.Option(
+            "--doc-types", "-t", help="Restrict to one or more doc types (invoice/receipt/resume)."
+        ),
     ] = None,
 ) -> None:
     """Run the eval matrix and write results to results/<date>.csv."""
